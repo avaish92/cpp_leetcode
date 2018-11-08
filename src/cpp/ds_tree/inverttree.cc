@@ -17,10 +17,9 @@ public:
     TreeNode *invertTree(TreeNode *root, TreeNode *left, TreeNode *right){
         if(!left || !right) return NULL;
         
-        std::swap(left->right, right->left);
-        std::swap(left->left, right->right);
-        invertTree(root,left->left,right->right);
-
-        return root;
+	std::swap(left->right, right->left);
+	std::swap(left->left, right->right);
+	invertTree(root,left->left,right->right);
+	return root;
     }
 };

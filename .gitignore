@@ -1,5 +1,6 @@
 .vscode/*
+.idea/*
 src/cpp/poc/*
-src/cpp/poc
 src/.project
 src/.vscode/
+*.swp

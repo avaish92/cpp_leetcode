@@ -4,9 +4,7 @@ class Solution {
     int sum = 0;
 public:
     bool isLeaf(TreeNode *root){
-        if(!root)   return false;
-        if(!root->left && !root->right) return true;
-        else return false;
+        return root && !root->left && !root->right;
     }
 
     int sumOfLeftLeaves(TreeNode* root) {
